@@ -1,8 +1,8 @@
 # Francis Lam's Portfolio (T1A2)
 ## Links
-- Link to published portfolio website: [Francis Lam's Portfolio]().
-- Link to Github repository: [Github repo]().
-- Link to presentation video: [Presentation video]().
+- Link to published portfolio website: [Francis Lam's Portfolio](https://francis-lams-portfolio-t1a2.netlify.app/).
+- Link to Github repository: [Github repo](https://github.com/frankie3388/Francis-Lam-portfolio-T1A2).
+- Link to presentation video: [Presentation video](https://www.loom.com/share/7e3f6fa13e4d47ee97eff4a06e638b44).
 
 ## Purpose
 
