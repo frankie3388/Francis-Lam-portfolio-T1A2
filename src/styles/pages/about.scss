@@ -1,0 +1,72 @@
+@import "../components/index";
+@import "../components/tablet";
+@import "../components/utils";
+@import "../components/article";
+@import "../defaults/colors";
+
+main {
+    .main-section {
+        flex-wrap: wrap-reverse;
+
+        .about-text {
+
+            h2 {
+                font-size: 2.5rem;
+                text-shadow: $shadow-color;
+            }
+
+            .skill-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-bottom: 50px;
+                .skill {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+// placed a black background behind the text to accessibility.
+@media screen and (max-width: 1200px) {
+    main {
+        .main-section {
+            .about-text {
+                p {
+                    font-size: 1.3rem;
+                    background-color: $text-box-color;
+                    padding: 20px;
+                    border-radius: 20px;
+
+                }
+                .skill-list {
+                    background-color: $text-box-color;
+                    padding: 20px;
+                    border-radius: 20px;
+
+                    .skill {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        .main-section {
+            .about-text {
+                p {
+                    background-color: $text-box-color;
+                    padding: 20px;
+                    border-radius: 20px;
+                    font-size: 1rem;
+                }
+                
+            }
+        }
+    }
+}

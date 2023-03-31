@@ -1,0 +1,45 @@
+@import "./utils";
+@import "../defaults/colors";
+@import "../defaults/breakpoint";
+
+
+header {
+    @include background-template();
+
+    .nav-titles {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        width: 70%;
+        
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: 'Genos', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            text-shadow: $shadow-color;
+
+            &:hover {
+                color: $text-hover-color;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        .nav-titles {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 0.9rem;
+                text-shadow: $media-text-shadow-color;
+            }
+        }
+    }
+}    

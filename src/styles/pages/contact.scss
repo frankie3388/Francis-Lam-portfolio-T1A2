@@ -1,0 +1,92 @@
+@import "../components/index";
+@import "../components/tablet";
+@import "../components/utils";
+@import "../defaults/colors";
+@import "../defaults/breakpoint";
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    h1 {
+        @include font-style();
+        color: $text-hover-color;
+        font-size: 5rem;
+        text-shadow: $shadow-color;
+    }
+    // Styling for Form component.
+    form {
+        .form-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+
+            label {
+                @include font-style();
+                margin-right: 30px;
+                font-size: 1.2rem;    
+            }
+
+            .form-input {
+                width: 400px;
+                border-radius: 4px;
+                box-sizing: border-box;
+                border: 1px solid $text-box-color;
+                font-size: 1rem;
+                box-shadow: $shadow-color;
+                outline: none;
+
+                &:focus {
+                    box-shadow: 0 0 8px 3px $primary-color;
+                }
+
+                &.form-textarea {
+                    resize: none;
+                }
+            }
+        }
+
+        .btn-section {
+            text-align: center;
+
+            #submit {
+                @include font-style();
+                width: 120px;
+                height: 40px;
+                border-radius: 4px;
+                border: none;
+                background-color: $secondary-color;
+                color: $primary-color;
+                box-shadow: $shadow-color;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #20569180;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        h1 {
+            font-size: $media-font-size;
+        }
+        form {
+            .form-section {
+                display: flex;
+                flex-direction: column;
+                label {
+                    font-size: 1rem;
+                }
+                .form-input {
+                    width: 200px;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}

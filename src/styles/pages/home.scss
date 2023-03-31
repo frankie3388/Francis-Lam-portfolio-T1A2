@@ -1,0 +1,74 @@
+@import "../components/index";
+@import "../components/tablet";
+
+// animation for my name on the home page.
+@keyframes color-change {
+    from {color: $text-hover-color}
+    to {color: $primary-color}
+}
+
+
+main {
+    
+    .main-section {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+        
+        // Styling for the introduction component.
+        .introduction {
+            box-sizing: border-box;
+            width: 500px;
+            flex: wrap;
+            margin: 0 20px 20px 20px;
+        
+            .intro-text {
+                @include font-style();
+                font-size: 2rem;
+                margin: 0;
+            }
+
+            .about_me-link {
+                text-decoration: none;
+
+                .name-text {
+                @include font-style();
+                font-size: 5rem;
+                font-weight: bold;
+                margin: 0;
+                text-shadow: $shadow-color;
+                animation-name: color-change;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                }
+            } 
+        }
+    }
+}
+
+// adjust the sizing of the elements when shrinking to under 600px.
+@media screen and (max-width: 600px) {
+    main {
+        .main-section {
+            .introduction {
+                width: 300px;
+                
+                .intro-text {
+                    font-size: 1rem;
+                }
+
+                .about_me-link {
+                    
+                    .name-text {
+                    @include font-style();
+                    font-size: $media-font-size;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,21 @@
+// base styling for header and footer on every page.
+@mixin background-template() {
+    padding: 16px;
+    font-size: 20px;
+}
+
+// base styling for the graphics component.
+@mixin graphics-template() {
+    border-bottom: 1px solid white;
+    transform: rotate(-45deg);   
+    box-sizing: border-box;
+    position: absolute;
+}
+
+// base font style for text in every page.
+@mixin font-style() {
+    color: white;
+    font-family: 'Genos', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+

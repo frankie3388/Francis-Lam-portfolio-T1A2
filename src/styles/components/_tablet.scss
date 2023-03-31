@@ -1,0 +1,143 @@
+@import "../defaults/colors";
+
+main {
+    section {
+        // samsung tablet/tablet component.
+        .samsung-tablet {
+            width: 650px;
+            box-sizing: border-box;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            background-color: $primary-color;
+            margin: 30px;
+            box-shadow: $shadow-color;
+
+            &:hover {
+                background-color: #252324;
+            }
+            
+            .screen {
+                padding: 10px;
+                
+                .link {
+                    .my-pic {
+                    display: block;
+                    width: 600px;
+                    height: 400px;
+                    // max-width: 100%;
+                    border-radius: 10px;
+                    object-fit: cover;
+                    }
+                }   
+            }
+
+            .camera-lens {  
+                border-radius: 50%;
+                margin-right: 10px;
+                box-sizing: border-box;
+                
+                .lens-image {
+                    width: 10px;
+                    height: 10px;
+                    // max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        section {
+            // samsung tablet/tablet component.
+            .samsung-tablet {
+                width: 550px;
+                box-sizing: border-box;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+                background-color: $primary-color;
+                margin: 30px;
+                box-shadow: $shadow-color;
+                
+                .screen {
+                    padding: 10px;
+
+                    .link {
+
+                        .my-pic {
+                        display: block;
+                        width: 500px;
+                        height: 300px;
+                        border-radius: 10px;
+                        }
+                    }
+                    
+                }
+                .camera-lens {  
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    box-sizing: border-box;
+                    
+                    .lens-image {
+                        width: 10px;
+                        height: 10px;
+                        // max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    main {
+        section {
+            // samsung tablet/tablet component.
+            .samsung-tablet {
+                // padding-top: 10px;
+                // padding-bottom: 10px;
+                width: 300px;
+                box-sizing: border-box;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 20px;
+                background-color: $primary-color;
+                margin: 30px;
+                box-shadow: $shadow-color;
+                
+                .screen {
+                    padding: 7px;
+
+                    .link {
+
+                        .my-pic {
+                        display: block;
+                        width: 270px;
+                        height: 150px;
+                        // max-width: 100%;
+                        border-radius: 10px;
+                        }
+                    }
+                    
+                }
+                .camera-lens {  
+                    border-radius: 50%;
+                    margin-right: 10px;
+                    box-sizing: border-box;
+                    
+                    .lens-image {
+                        width: 7px;
+                        height: 7px;
+                        // max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

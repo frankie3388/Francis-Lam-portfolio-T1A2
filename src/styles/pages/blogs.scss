@@ -1,0 +1,73 @@
+@import "../components/index";
+@import "../components/tablet";
+@import "../components/utils";
+@import "../defaults/colors";
+
+main {
+    
+    .heading {
+        text-align: center;
+        
+        h1 {
+            @include font-style();
+            font-size: 5rem;
+            margin: 20px 0px 0px 0px;
+            text-shadow: $shadow-color;
+        }
+    }
+    // Styling for blog list component
+    .blog-list {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        .blog {
+            
+            .blog-title {
+                padding: 0px;
+                text-align: center;
+                a {
+                    text-decoration: none;
+
+                    h2 {
+                    @include font-style();
+                    color: $blog-heading-color;
+                    margin-top: 25px;
+                    margin-bottom: 0px;
+                    }
+                }
+                .date-published {
+                    margin-top: 5px;
+                    margin-bottom: 0px; 
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        .heading {
+            h1 {
+                font-size: 2.8rem;
+            }
+        }
+
+        .blog-list {
+            .blog {
+                .blog-title {
+                    text-align: center;
+                    a {
+                        h2 {
+                        font-size: 1.2rem;
+                        }
+                    }
+                    .date-published {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

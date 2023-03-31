@@ -1,0 +1,101 @@
+@import "../components/index";
+@import "../components/tablet";
+@import "../components/utils";
+@import "../components/article";
+@import "../defaults/colors";
+
+
+// animation for resume text.
+@keyframes color-change {
+    from {color: $text-hover-color}
+    to {color: $primary-color}
+}
+
+main {
+    .main-section {
+        // samsung tablet / tablet component
+        .samsung-tablet {
+            // had to adjust the sizing of the screen class as it was not an image element, thus had to manually set the width and height.
+            .screen {
+                margin: 10px 0px 10px 10px;
+                width: 600px;
+                height: 400px;
+                border: 1px solid black;
+                border-radius: 10px;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: linear-gradient(to top right, black, grey);
+
+                .resume {
+                    @include font-style();
+                    animation: color-change;
+                    animation-duration: 5s;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                    color: $primary-color;
+                    text-decoration: none;
+                    font-size: 5rem;
+                }
+            }
+
+            .camera-lens {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    main {
+        .main-section {
+            // samsung tablet / tablet component
+            .samsung-tablet {
+                height: 300px;
+
+                .screen {
+                    height: 280px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        .main-section {
+            .about-text {
+                p {
+                    margin-bottom: 0px;
+                    border-radius: 10px;
+                    background-color: $text-box-color;
+                }
+            }
+            // samsung tablet / tablet component
+            .samsung-tablet {
+                width: 350px;
+                height: 200px;
+        
+                .screen {
+                    width: 310px;
+                    height: 180px;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    .resume {
+                        @include font-style();
+                        color: $primary-color;
+                        text-decoration: none;
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

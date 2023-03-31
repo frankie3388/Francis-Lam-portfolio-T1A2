@@ -1,0 +1,75 @@
+@import "../components/index";
+@import "../defaults/breakpoint";
+
+main {
+    // Styling for Blog article component.
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        header {
+            text-align: center;
+            h1 {
+                @include font-style();
+                font-size: 5rem;
+                margin: 0;
+                text-align: center;
+                text-shadow: 10px 10px 10px rgb(255, 255, 255);;
+                color: $blog-heading-color;
+            }
+            .date-published {
+                color: $blog-heading-color;
+            }
+        }
+        
+        section {
+            width: 100%;
+            img {
+                width: 100%;
+                height: 600px;
+                object-fit: cover;
+            }
+        }
+        .description {
+            background-color: $text-box-color;
+            width: 60%;
+            position: relative;
+            bottom: 100px;
+            border-radius: 20px;
+            padding: 10px;
+            p {
+                @include font-style();
+                font-size: 1.3rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        article {
+            header {
+                h1 {
+                    font-size: $media-font-size;
+                }
+                .date-published {
+                    font-size: 1rem;
+                }
+            }
+            
+            section {
+                img {
+                    width: 100%;
+                    height: 250px;
+                    object-fit: cover;
+                }
+            }
+            .description {
+                p {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}

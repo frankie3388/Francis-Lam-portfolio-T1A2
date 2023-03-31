@@ -1,0 +1,57 @@
+@import "./utils";
+@import "../defaults/colors";
+@import "../defaults/breakpoint";
+
+// styling for article component in the About Me page and Work History page.
+main {
+    .main-section {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .about-text {
+            @include font-style();
+            width: 500px;
+            margin-right: 20px;
+            margin-left: 20px;
+
+            h1 {
+                font-size: 5rem;
+                margin-top: 0px;
+                margin-bottom: 10px;
+                text-shadow: $shadow-color;
+            }
+
+            p {
+                font-size: 1.5rem;
+                padding: 20px;
+                border-radius: 20px;
+            }
+            
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    main {
+        .main-section {
+            .about-text {
+                h1 {
+                    font-size: $media-font-size;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+
+                h2 {
+                    font-size: $media-font-size;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
