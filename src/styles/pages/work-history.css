@@ -275,6 +275,7 @@ main section .samsung-tablet:hover {
 }
 main section .samsung-tablet .screen {
   padding: 10px;
+  margin: 0px;
 }
 main section .samsung-tablet .screen .link .my-pic {
   display: block;
@@ -286,7 +287,7 @@ main section .samsung-tablet .screen .link .my-pic {
 }
 main section .samsung-tablet .camera-lens {
   border-radius: 50%;
-  margin-right: 10px;
+  margin: 0px 10px 0px 0px;
   box-sizing: border-box;
 }
 main section .samsung-tablet .camera-lens .lens-image {
@@ -297,59 +298,25 @@ main section .samsung-tablet .camera-lens .lens-image {
 @media screen and (max-width: 800px) {
   main section .samsung-tablet {
     width: 550px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    background-color: #ffffff;
-    margin: 30px;
-    box-shadow: 10px 10px 10px rgb(56, 56, 56);
   }
   main section .samsung-tablet .screen {
     padding: 10px;
   }
   main section .samsung-tablet .screen .link .my-pic {
-    display: block;
     width: 500px;
     height: 300px;
-    border-radius: 10px;
-  }
-  main section .samsung-tablet .camera-lens {
-    border-radius: 50%;
-    margin-right: 10px;
-    box-sizing: border-box;
-  }
-  main section .samsung-tablet .camera-lens .lens-image {
-    width: 10px;
-    height: 10px;
   }
 }
 @media screen and (max-width: 600px) {
   main section .samsung-tablet {
     width: 300px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    background-color: #ffffff;
-    margin: 30px;
-    box-shadow: 10px 10px 10px rgb(56, 56, 56);
   }
   main section .samsung-tablet .screen {
     padding: 7px;
   }
   main section .samsung-tablet .screen .link .my-pic {
-    display: block;
     width: 270px;
     height: 150px;
-    border-radius: 10px;
-  }
-  main section .samsung-tablet .camera-lens {
-    border-radius: 50%;
-    margin-right: 10px;
-    box-sizing: border-box;
   }
   main section .samsung-tablet .camera-lens .lens-image {
     width: 7px;

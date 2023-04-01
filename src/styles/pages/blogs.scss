@@ -22,7 +22,10 @@ main {
         align-items: center;
         flex-wrap: wrap;
         .blog {
-            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             .blog-title {
                 padding: 0px;
                 text-align: center;
@@ -46,7 +49,7 @@ main {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     main {
         .heading {
             h1 {

@@ -280,10 +280,11 @@ main article header h1 {
 main article header .date-published {
   color: rgba(0, 0, 0, 0.863);
 }
-main article section {
+main article figure {
   width: 100%;
+  margin: 0px;
 }
-main article section img {
+main article figure img {
   width: 100%;
   height: 600px;
   -o-object-fit: cover;
@@ -312,7 +313,7 @@ main article .description p {
   main article header .date-published {
     font-size: 1rem;
   }
-  main article section img {
+  main article figure img {
     width: 100%;
     height: 250px;
     -o-object-fit: cover;
